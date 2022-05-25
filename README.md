@@ -18,8 +18,9 @@ AS AN employer looking for candidates with experience building single-page appli
 - JS
 
 ## ScreenShot of website
-
-
+![ReactPortfolio](https://user-images.githubusercontent.com/94805706/170384237-d492fc7d-3106-430a-9c9b-d1da7d85f007.png)
+![ReactPortfolio1](https://user-images.githubusercontent.com/94805706/170384241-0f6a633e-6a9a-4369-9062-c19dc6992430.png)
+![ReactPortfolio2](https://user-images.githubusercontent.com/94805706/170384242-6f6883bf-8fb7-424e-9dd5-1bab74562808.png)
 
 ## Resources
 - UofU React Module 20
