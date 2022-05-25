@@ -1,15 +1,20 @@
 import React from 'react';
-import coverImage from "../../assets/cover/cover-image.jpg";
+import coverImage from "../../assets/cover/divya.jpg"
 
 function About() {
   return (
     <section className="my-5">
       <h1 id="about">Who am I?</h1>
-      <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
+      <h2> Divya Arigay </h2>
+      <img src={coverImage} className="my-2" style={{ width: "15%" }} alt="cover" />
       <div className="my-2">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum. Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh. Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
-      </p>
+        I'm a full stack developer located in Utah. I have a serious passion for web development.
+          Creating intuitive dynamic user experience.        
+      I am a well organised person, hardworking problem solver, with high attention to detail.
+      A family person and a mother of two kids.</p>
+         
+      
       </div>
     </section>
   );

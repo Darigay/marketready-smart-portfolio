@@ -1,62 +1,78 @@
 
-import React, { useState } from 'react';
+import React from 'react';
+import Modal from '../Modal';
 
-const ProjectList = ({ category }) => {
-  const [photos] = useState([
+const ProjectList = ({ projects }) => {
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [currentProject, setCurrentProject] = useState();
+  const project = [
     {
-      name: 'Grocery aisle',
-      category: 'commercial',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      name: 'Fridgician',
+      image: 'Fridgician1.jpeg',
+      Github: 'https://github.com/Darigay/Fridgician',
+      DeployedApp: 'https://darigay.github.io/Fridgician/'
     },
     {
-      name: 'Grocery booth',
-      category: 'commercial',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      name: 'PetLink',
+      image: 'petlink_1.0.png',
+      Github: 'https://github.com/cbushman9/petlink',
+      DeployedApp: 'https://gentle-tundra-78964.herokuapp.com/'
     },
     {
-      name: 'Building exterior',
-      category: 'commercial',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      name: 'PetLink_2.0',
+      image: 'Petlink2-LoginPage.png',
+      Github: 'https://github.com/Darigay/PetLink_2.0',
+      DeployedApp: 'https://serene-wildwood-60342.herokuapp.com/'
     },
     {
-      name: 'Restaurant table',
-      category: 'commercial',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      name: 'Assignment-BookSearchEngine',
+      image: 'BookSearch-searchpage.png',
+      Github: 'https://github.com/Darigay/MERN_Solid_Book_Search',
+      DeployedApp: 'https://cryptic-beyond-55866.herokuapp.com/'
     },
     {
-      name: 'Cafe interior',
-      category: 'commercial',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      name: 'Assignment-BudgetTracker',
+      image: 'BT_PWA_1.png',
+      Github: 'https://github.com/Darigay/HighlyUseful_BudgetTracker_PWA',
+      DeployedApp: 'https://stark-basin-08812.herokuapp.com/'
     },
     {
-      name: 'Cat green eyes',
-      category: 'portraits',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    }
-  ]);
+      name: 'Assignment-WeatherApp',
+      image: 'weather1.jpeg',
+      Github: 'https://github.com/Darigay/weather-dashboard',
+      DeployedApp: 'https://darigay.github.io/weather-dashboard/ '
+    },
 
-  const currentPhotos = photos.filter(photo => photo.category === category);
+
+
+
+  ]
+
+  // const currentProjects = projects.filter((project) => project.category === category);
+
+
+  // const toggleModal = (image, i) => {
+  //   setCurrentProject({ ...image, index: i });
+  //   setIsModalOpen(!isModalOpen);
+  // }
 
   return (
     <div>
       <div className="flex-row">
-        {currentPhotos.map((image, i) => (
+        {project.map(project => (
+          <div key={project.name} className="card space-between">
           <img
-            src={require(`../../assets/small/${category}/${i}.jpg`).default}
-            alt={image.name}
+            src={require(`../../assets/screenshots/${project.image}`)}
+            alt={project.name}
             className="img-thumbnail mx-1"
-            key={image.name}
+            key={project.image}
           />
+          <a href={project.DeployedApp}>DeployedApp</a><br></br>
+          <a href={project.Github}>GitHUb</a></div>
         ))}
-      </div>
+      </div>  
     </div>
-  );
+      );
 };
 
-export default ProjectList;
+      export default ProjectList;

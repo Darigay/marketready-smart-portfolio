@@ -5,7 +5,7 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
+  --primary: #596f0d81;
   --secondary: #F3A847;
   --tertiary: #B12704;
   --light: #fafafa;
@@ -34,8 +34,8 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
-  color: var(--light);
+  background: var(--light);
+  color: var(--dark);
   font-family: 'Poiret One', cursive;
 
 }
@@ -92,8 +92,10 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background: var(--primary);
 }
+
+footer {background: var(--primary); }
 
 header a {
   color: var(--light);
